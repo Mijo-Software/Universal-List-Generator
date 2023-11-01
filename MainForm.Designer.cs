@@ -29,11 +29,11 @@
 		private void InitializeComponent()
 		{
 			kryptonStatusStripInfo = new Krypton.Toolkit.KryptonStatusStrip();
+			toolStripStatusLabel1 = new ToolStripStatusLabel();
 			toolStripContainer = new ToolStripContainer();
 			kryptonStatusStripStatistic = new Krypton.Toolkit.KryptonStatusStrip();
-			toolStripStatusLabel1 = new ToolStripStatusLabel();
-			menuStrip = new MenuStrip();
 			kryptonPanel = new Krypton.Toolkit.KryptonPanel();
+			menuStrip = new MenuStrip();
 			kryptonStatusStripInfo.SuspendLayout();
 			toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			toolStripContainer.ContentPanel.SuspendLayout();
@@ -51,10 +51,16 @@
 			kryptonStatusStripInfo.Name = "kryptonStatusStripInfo";
 			kryptonStatusStripInfo.ProgressBars = null;
 			kryptonStatusStripInfo.RenderMode = ToolStripRenderMode.ManagerRenderMode;
-			kryptonStatusStripInfo.Size = new Size(715, 22);
+			kryptonStatusStripInfo.Size = new Size(509, 22);
 			kryptonStatusStripInfo.SizingGrip = false;
 			kryptonStatusStripInfo.TabIndex = 1;
 			kryptonStatusStripInfo.Text = "kryptonStatusStripInfo";
+			// 
+			// toolStripStatusLabel1
+			// 
+			toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+			toolStripStatusLabel1.Size = new Size(118, 17);
+			toolStripStatusLabel1.Text = "toolStripStatusLabel1";
 			// 
 			// toolStripContainer
 			// 
@@ -67,11 +73,11 @@
 			// toolStripContainer.ContentPanel
 			// 
 			toolStripContainer.ContentPanel.Controls.Add(kryptonPanel);
-			toolStripContainer.ContentPanel.Size = new Size(715, 379);
+			toolStripContainer.ContentPanel.Size = new Size(509, 425);
 			toolStripContainer.Dock = DockStyle.Fill;
 			toolStripContainer.Location = new Point(0, 0);
 			toolStripContainer.Name = "toolStripContainer";
-			toolStripContainer.Size = new Size(715, 447);
+			toolStripContainer.Size = new Size(509, 493);
 			toolStripContainer.TabIndex = 2;
 			toolStripContainer.Text = "toolStripContainer";
 			// 
@@ -87,16 +93,18 @@
 			kryptonStatusStripStatistic.Name = "kryptonStatusStripStatistic";
 			kryptonStatusStripStatistic.ProgressBars = null;
 			kryptonStatusStripStatistic.RenderMode = ToolStripRenderMode.ManagerRenderMode;
-			kryptonStatusStripStatistic.Size = new Size(715, 22);
+			kryptonStatusStripStatistic.Size = new Size(509, 22);
 			kryptonStatusStripStatistic.SizingGrip = false;
 			kryptonStatusStripStatistic.TabIndex = 2;
 			kryptonStatusStripStatistic.Text = "kryptonStatusStripStatistic";
 			// 
-			// toolStripStatusLabel1
+			// kryptonPanel
 			// 
-			toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-			toolStripStatusLabel1.Size = new Size(118, 17);
-			toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+			kryptonPanel.Dock = DockStyle.Fill;
+			kryptonPanel.Location = new Point(0, 0);
+			kryptonPanel.Name = "kryptonPanel";
+			kryptonPanel.Size = new Size(509, 425);
+			kryptonPanel.TabIndex = 0;
 			// 
 			// menuStrip
 			// 
@@ -104,22 +112,14 @@
 			menuStrip.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
 			menuStrip.Location = new Point(0, 0);
 			menuStrip.Name = "menuStrip";
-			menuStrip.Size = new Size(715, 24);
+			menuStrip.Size = new Size(509, 24);
 			menuStrip.TabIndex = 0;
-			// 
-			// kryptonPanel
-			// 
-			kryptonPanel.Dock = DockStyle.Fill;
-			kryptonPanel.Location = new Point(0, 0);
-			kryptonPanel.Name = "kryptonPanel";
-			kryptonPanel.Size = new Size(715, 379);
-			kryptonPanel.TabIndex = 0;
 			// 
 			// MainForm
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(715, 447);
+			ClientSize = new Size(509, 493);
 			Controls.Add(toolStripContainer);
 			CornerRoundingRadius = 10F;
 			FormBorderStyle = FormBorderStyle.FixedSingle;
