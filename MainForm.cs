@@ -6,5 +6,9 @@ namespace Universal_List_Generator
 		{
 			InitializeComponent();
 		}
+
+		private void MainForm_Load(object sender, EventArgs e)
+		{
+		}
 	}
 }
