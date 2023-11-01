@@ -1,6 +1,6 @@
 namespace Universal_List_Generator
 {
-	public partial class MainForm : Form
+	public partial class MainForm : Krypton.Toolkit.KryptonForm
 	{
 		public MainForm()
 		{
